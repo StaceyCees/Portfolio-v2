@@ -1,2 +1,3 @@
-# Portfolio-v2
-Portfolio Version 2
+# Bootstrap-Portfolio
+Version 2 of Bootsrap Portfolio
+Design updated and coding projects added with links

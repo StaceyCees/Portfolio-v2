@@ -1,0 +1,234 @@
+.about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+   }
+   .about h1{
+    color:#F97300;
+    margin: 2em;
+   }
+   .about img{
+    height: 100%;
+       width: 100%;
+   }
+   .about span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+   }
+   .about .desc{
+    padding: 2em;
+    border-left:4px solid #000000;
+   }
+   .about .desc h3{
+    color: #000000;
+   }
+   .about .desc p{
+    line-height:2;
+    color:#888;
+   }
+
+   .btn-primary{
+       background-color: #ffffff;
+       color: #000000;
+       border: 0px;
+       display: block;
+    margin: 0 auto;
+    font-weight: bold;
+   }
+
+
+   .card{
+       border: 0px;
+   }
+
+   #emailLink{
+       color: #888888;
+   }
+
+/* Trouble adding margin below text-center */
+
+#contact-area{
+margin-bottom: 5px;
+}
+
+   .text-center {
+       margin-bottom: 7 px; 
+       color: #000000;
+   }
+
+   .contact-form{
+    margin: 4;
+    position: relative; 
+   }
+   .contact-form h1{
+    color: #10828C; 
+   }
+   .contact-form .right{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 5px;
+   }
+   .contact-form .right .btn-secondary{
+    background:  #10828C;
+    color: #fff;
+    border:0;
+   }
+   .contact-form .right .form-control::placeholder{
+    color: #888;
+    font-size: 16px;
+   }
+
+
+   .img-write {
+       display: block;
+       max-width: 100%;
+       max-height: 100%;
+       margin-bottom: 5px;
+   }
+
+/* animated button */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+$button-color: #10828C;
+$transition-time: 750ms;
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #10828C;
+	font-family: 'Droid Serif', serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+	position: relative;
+	display: inline-flex;
+	text-decoration: none;
+	color: #fff;
+	background-color: lighten(10%);
+	padding-left: 2rem;
+	overflow: hidden;
+	z-index: 1;
+	align-items: center;
+    box-shadow: 0px 3px 4px -4px rgba(0,0,0,0.75);
+    	
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		width: 100%;
+		height: 100%;
+		background-color: $button-color;
+		z-index: -1;
+		transition: transform $transition-time;
+	}
+	
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 2rem;
+		padding: 1rem;
+		overflow: hidden;
+		background-color: $button-color;
+	}
+	
+	svg {
+		max-width: 20px;
+		width: 100%;
+		height: auto;
+		max-height: 18px;
+		fill: white;
+	}
+	
+	&:hover {
+		
+		&::before {
+			transform: scaleX(1);
+		}
+		
+		svg {
+			animation: moveArrow $transition-time;
+		}
+		
+	}
+	
+}
+
+.jumbotron {
+    padding: 0px;
+}
+
+.vertical-align {
+    letter-spacing: -4px;
+    font-size: 0;
+    background-color: white;
+  }
+  
+  .vertical-align .col-xs-4 {
+    vertical-align: middle;
+    display: inline-block;
+    background-color: white;
+    letter-spacing: 0;
+    font-size: 14px;
+    float: none;
+  }
+
+.btn-block {
+    margin-top: 46px !important;
+}
+
+@keyframes moveArrow {
+	
+	0% {
+		transform: translateX(0px);
+	}
+	
+	49% {
+		transform: translateX(50px);
+	}
+	
+	50% {
+		transform: translateX(-50px);
+	}
+	
+	100% {
+		transform: translateX(0px);
+	}
+	
+}
+
+
+
+
+
+/* visited link */
+a:visited {
+    color: #888888;
+}
+
+a {
+    color: #888888;
+}
+ 
+ #footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    .footer-block {
+      margin: 20px 0;
+    }
+}
+}
